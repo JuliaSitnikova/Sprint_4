@@ -48,7 +48,7 @@ class TestBooksCollector:
         collector.set_book_genre('Отель', 'Детективы')
         collector.set_book_genre('Аэропорт', 'Детективы')
         collector.set_book_genre('Черновик', 'Фантастика')
-        assert collector.get_books_with_specific_genre('Детективы') == ['Отель', 'Пуаро']
+        assert collector.get_books_with_specific_genre('Детективы') == ['Отель', 'Аэропорт']
 
     def test_get_books_genre(collector):
         collector = BooksCollector()
